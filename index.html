@@ -34,20 +34,24 @@
         <ul>
           <li>safayet</li>
           <li>Bonobash</li>
-          <li>jalali set</li>
+          <li id="band">jalali set</li>
           <li>Dom de re Baba</li>
         </ul>
     </section>
     <section>
-      <h1 id="food-title">Foods Items</h1>
+      <h1 id="food-title">Foods Items I love you
+
+      </h1>
       <ul>
         <li>Rice</li>
         <li>Potato</li>
         <li>Berger</li>
         <li>Banana</li>
-        <li>Tometo</li>
-        <li>Apple</li>
-        <li>Fish</li>
+        <li class="foreign">Tometo</li>
+        <li class="foreign">Apple</li>
+        <li class="international">go ot dubai </li>
+        <li class="foreign">Fish</li>
+
       </ul>
     </section>
   </main>
@@ -58,13 +62,13 @@
     //   console.log('mon bose na porar table e');
     //   console.log('tome ki vlo aco bondhu');
     // console.log('Dom: Document Object Model');
-    const student = {
-      name: 'Montlu-Pilot',
-      id: 123456,
-      study: function (subject) {
-        console.log('studying subject:', subject);
-      }
-    }
+    // const student = {
+    //   name: 'Montlu-Pilot',
+    //   id: 123456,
+    //   study: function (subject) {
+    //     console.log('studying subject:', subject);
+    //   }
+    // }
     // li tag call 
     // document.getElementsByTagName
     // const licollection = document.getElementsByTagName('li');
@@ -85,12 +89,32 @@
     //   console.log(textParagraph.innerText);
     // }
     // inner html 
-    const htmlElement = document.getElementsByTagName('h1');
-    console.log(htmlElement);
-    for (const valu of htmlElement) {
-      console.log(valu.getHTML);
+    // const htmlElement = document.getElementsByTagName('h1');
+    // console.log(htmlElement);
+    // for (const valu of htmlElement) {
+    //   console.log(valu.getHTML);
+    // }
+    // get by Id 
+
+    const foodTitleH1 = document.getElementById('food-title');
+
+    // console.log(foodTitleH1.innerHTML);
+
+    // const liCollection = document.getElementsByTagName('li');
+    // console.log(liCollection);
+    // console.log(foodTitleH1.innerHTML);
+    // foodTitleH1.innerText = 'food i love eat';
+    // const bandNameOut = document.getElementById('band');
+    // bandNameOut.innerText = 'jalali sleeping mood';
+    const foreignItems = document.getElementsByClassName('foreign');
+    console.log(foreignItems);
+    for (const item of foreignItems) {
+      console.log(item.innerText);
     }
+
+
   </script>
+
 
   <script src="./js/hellow.js"></script>
 </body>
