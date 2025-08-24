@@ -4,11 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tour of Dom</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <style>
+    h1 {
+      color: aquamarine;
+
+    }
+
+    h2 {
+      color: red;
+    }
+
+    #food-title {
+      color: chartreuse;
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>This is my header</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, dolorem!</p>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to my Dom</h1>
+        <p>I had overout time</p>
+        <ul>
+          <li>safayet</li>
+          <li>Bonobash</li>
+          <li>jalali set</li>
+          <li>Dom de re Baba</li>
+        </ul>
+    </section>
+    <section>
+      <h1 id="food-title">Foods Items</h1>
+      <ul>
+        <li>Rice</li>
+        <li>Potato</li>
+        <li>Berger</li>
+        <li>Banana</li>
+        <li>Tometo</li>
+        <li>Apple</li>
+        <li>Fish</li>
+      </ul>
+    </section>
+  </main>
 
+  <script>
+    //   console.log('Hellow world javascrit!!!!');
+    //   console.log('hellow bole chole gala');
+    //   console.log('mon bose na porar table e');
+    //   console.log('tome ki vlo aco bondhu');
+    // console.log('Dom: Document Object Model');
+    const student = {
+      name: 'Montlu-Pilot',
+      id: 123456,
+      study: function (subject) {
+        console.log('studying subject:', subject);
+      }
+    }
+    // li tag call 
+    // document.getElementsByTagName
+    // const licollection = document.getElementsByTagName('li');
+    // console.log(licollection);
+    // for (const li of licollection) {
+    //   console.log(li.innerText);
+    // }
+    // h1 tag call 
+    // const h2ElementName = document.getElementsByTagName('h2');
+    // console.log(h2ElementName);
+    // for (const heading of h2ElementName) {
+    //   console.log(heading.innerText);
+    // }
+    // p tag call 
+    // const allElementTag = document.getElementsByTagName('p');
+    // console.log(allElementTag);
+    // for (const textParagraph of allElementTag) {
+    //   console.log(textParagraph.innerText);
+    // }
+    // inner html 
+    const htmlElement = document.getElementsByTagName('h1');
+    console.log(htmlElement);
+    for (const valu of htmlElement) {
+      console.log(valu.getHTML);
+    }
+  </script>
+
+  <script src="./js/hellow.js"></script>
 </body>
 
 </html>
