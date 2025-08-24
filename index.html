@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour of Dom</title>
   <link rel="stylesheet" href="./styles/style.css">
+
   <style>
     h1 {
       color: aquamarine;
@@ -19,6 +20,27 @@
     #food-title {
       color: chartreuse;
     }
+
+    .food .foreign {
+      font-weight: 700;
+      color: red;
+    }
+
+    .bg {
+      color: moccasin;
+    }
+
+    .bold {
+      font-weight: 100;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .big {
+      font-weight: 200;
+    }
   </style>
 </head>
 
@@ -28,9 +50,13 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, dolorem!</p>
   </header>
   <main>
-    <section>
+    <section id="old-dhaka" class="song">
       <h2>Welcome to my Dom</h1>
-        <p>I had overout time</p>
+        <p>Lorem ipsum dolor sit amet <span>oli-goli</span> consectetur adipisicing elit. Non, quidem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita totam aut laborum laudantium saepe sequi
+          delectus possimus ab! Iusto facilis voluptas non laboriosam sequi. <span>dhanmondi</span>Non id error aperiam
+          odio ullam!</p>
+        <p>I had overout <span>buter-goli</span>time</p>
         <ul>
           <li>safayet</li>
           <li>Bonobash</li>
@@ -38,7 +64,7 @@
           <li>Dom de re Baba</li>
         </ul>
     </section>
-    <section>
+    <section class="food">
       <h1 id="food-title">Foods Items I love you
 
       </h1>
@@ -52,6 +78,19 @@
         <li class="international">go ot dubai </li>
         <li class="foreign">Fish</li>
 
+      </ul>
+    </section>
+    <section id="player-container">
+      <h3>Player Name </h3>
+      <ul>
+        <li>Messi</li>
+        <li>Ronaldo</li>
+        <li>Kaka</li>
+        <li>Play</li>
+        <li>Naymer</li>
+        <li>robinho</li>
+        <li>Rabada</li>
+        <li>jidan</li>
       </ul>
     </section>
   </main>
@@ -106,17 +145,22 @@
     // foodTitleH1.innerText = 'food i love eat';
     // const bandNameOut = document.getElementById('band');
     // bandNameOut.innerText = 'jalali sleeping mood';
-    const foreignItems = document.getElementsByClassName('foreign');
-    console.log(foreignItems);
-    for (const item of foreignItems) {
-      console.log(item.innerText);
+    // const foreignItems = document.getElementsByClassName('foreign');
+    // console.log(foreignItems);
+    // for (const item of foreignItems) {
+    //   console.log(item.innerText);
+    // }
+    // querySelectorAll 
+    const queryElement = document.querySelectorAll('#old-dhaka p span');
+    // console.log(queryElement);
+    for (const spanEle of queryElement) {
+      // console.log(spanEle.innerText);
     }
-
-
   </script>
 
 
   <script src="./js/hellow.js"></script>
+  <script src="./js/cssInJs.js"></script>
 </body>
 
 </html>
