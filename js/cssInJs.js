@@ -8,7 +8,7 @@ const sections = document.querySelectorAll('section');
 //   section.style.borderRadius='10px';
 //   section.style.padding='15px';
 // }
-dynamic class (classList = DOMTokenList object)
+// dynamic class (classList = DOMTokenList object) 
 for (const section of sections) {
   section.classList.add('section-card');
 }
